@@ -20,6 +20,11 @@ const styles = (theme) => ({
         backgroundColor: theme.palette.secondary.main,
         height: '100vh'
     },
+    grid: {
+        paddingTop: '10vh',
+        paddingBottom: '10vh'
+
+    }
 });
 
 
@@ -28,8 +33,7 @@ const Homepage = (props) => {
     return (
         <div className="Homepage">
             <div className={classes.root}>
-                <div style={{height: '10vh'}}/>
-                <Grid container>
+                <Grid container className={classes.grid}>
                     <Grid container item lg={5} md={4} sm={3} xs={2}>
 
                     </Grid>
